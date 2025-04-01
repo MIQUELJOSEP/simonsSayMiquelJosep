@@ -1,25 +1,31 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"> <!-- Defineix el document com a HTML5 i especifica l'idioma com a espanyol -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simon Says</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="index.js"></script>
+    <meta charset="UTF-8"> <!-- Defineix la codificació de caràcters com a UTF-8 per suportar símbols especials -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Assegura una correcta visualització en dispositius mòbils -->
+    <title>Simon Says</title> <!-- Títol de la pàgina que apareixerà a la pestanya del navegador -->
+    <link rel="stylesheet" href="style.css"> <!-- Enllaça una fulla d'estils CSS externa per al disseny -->
+    <script defer src="index.js"></script> <!-- Enllaça un fitxer JavaScript extern amb l'atribut "defer" perquè es carregui després del HTML -->
 </head>
 <body>
-<h1>Simon Says</h1>
+<h1>Simon Says</h1> <!-- Títol principal de la pàgina -->
+
+<!-- Botó per començar el joc, crida la funció "inici()" quan es fa clic -->
 <button onclick="inici()" id="start">Començar</button>
+
+<!-- Contenidor principal dels botons de colors del joc -->
 <div class="container">
-    <button class="color red" data-color="red"></button>
-    <button class="color blue" data-color="blue"></button>
-    <button class="color green" data-color="green"></button>
-    <button class="color yellow" data-color="yellow"></button>
-    <button class="color orange" data-color="orange"></button>
-    <button class="color purple" data-color="purple"></button>
-    <button class="color cyan" data-color="cyan"></button>
-    <button class="color pink" data-color="pink"></button>
+    <button class="color red" data-color="red"></button> <!-- Botó de color vermell -->
+    <button class="color blue" data-color="blue"></button> <!-- Botó de color blau -->
+    <button class="color green" data-color="green"></button> <!-- Botó de color verd -->
+    <button class="color yellow" data-color="yellow"></button> <!-- Botó de color groc -->
+    <button class="color orange" data-color="orange"></button> <!-- Botó de color taronja -->
+    <button class="color purple" data-color="purple"></button> <!-- Botó de color lila -->
+    <button class="color cyan" data-color="cyan"></button> <!-- Botó de color cian -->
+    <button class="color pink" data-color="pink"></button> <!-- Botó de color rosa -->
 </div>
+
+<!-- Div per mostrar informació del joc, com puntuació o instruccions -->
 <div class="mostrador"></div>
 </body>
 </html>
